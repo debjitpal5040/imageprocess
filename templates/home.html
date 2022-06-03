@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ImgWeb</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <div id="div1">
+            <h1 id="h">ImgWeb</h1>
+            <p id="p1">Edit your image in style</p>
+            <div class="d">
+                This is a very simple image editing website<br> Just upload your image, apply the filter you want and
+                download your resulting image. As simple as that !!
+            </div>
+        </div>
+        <form action="filter_selection" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="div2">
+                <h1>Upload your image</h1><br>
+                <input type="file" name="image" accept="image/*" class="sub" id="imgc" required><br>
+                <input type="submit" value="Upload Image" class="sub">
+            </div>
+        </form>
+        <div id="outbox">
+            <div id="inbox">
+                <h1 id="inh1">Made with love by</h1>
+                <a href="https://www.linkedin.com/in/debjit-pal-539214192/" id="ina1"><img
+                        src="https://webstockreview.net/images/linkedin-icon-png-7.png" alt="linkedin">Debjit
+                    Pal</a><br>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Preview & Filters</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'filter_selection.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="div1">
+            <h1 id="h">ImgWeb</h1>
+            <p id="p1">Edit your image in style</p>
+        </div>
+        <div class="d">
+            Here is your image !!<br> Now choose the filter you want to apply to your image.
+        </div>
+        <div class="div2">
+            {% if raw_image %}
+            <span>
+                <h1 class="heading">Your uploaded image</h1>
+                <img src={{raw_image}} id="userimg">
+                <br>
+            </span>
+            {% endif %}
+            <form action="result" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <h3 id="choose">Choose Filter :</h3>
+                <select id="filter" name="filter" required>
+                    <option value="Black & White">Black & White</option>
+                    <option value="Blur">Blur</option>
+                    <option value="Inverted Colour">Inverted Colour</option>
+                    <option value="Sketch Style">Sketch Style</option>
+                    <option value="Increase Brightness">Increase Brightness</option>
+                    <option value="Decrease Brightness">Decrease Brightness</option>
+                    <option value="Size Downscale">Size Downscale</option>
+                    <option value="Size Upscale">Size Upscale</option>
+                    <option value="Horizontal Flip">Horizontal Flip</option>
+                    <option value="Vertical Flip">Vertical Flip</option>
+                    <option value="Rotate">Rotate</option>
+                </select><br>
+                <input type="submit" value="Apply Filter" id="filbut">
+            </form>
+        </div>
+        <div id="outbox">
+            <div id="inbox">
+                <h1 id="inh1">Made with love by</h1>
+                <a href="https://www.linkedin.com/in/debjit-pal-539214192/" id="ina1"><img
+                        src="https://webstockreview.net/images/linkedin-icon-png-7.png" alt="linkedin">Debjit
+                    Pal</a><br>
+            </div>
+        </div>
+    </body>
+
+</html>

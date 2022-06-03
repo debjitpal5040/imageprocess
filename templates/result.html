@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Result</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'result.css' %}">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="div1">
+            <h1 id="h">ImgWeb</h1>
+            <p id="p1">Edit your image in style</p>
+        </div>
+        <div class="d">
+            Your image is ready !!<br> Here is the comparison... Click the download button to download your image.
+        </div>
+        {% if raw_image or processed_image%}
+        <div class="container">
+            <div>
+                <h1 class="heading" style="text-align: center;">YOUR UPLOADED IMAGE </h1>
+                <img src={{raw_image}} class="imgr">
+                </span>
+            </div>
+            <div>
+                <span>
+                    <h1 class="heading" style="text-align: center;">PROCESSED IMAGE</h1>
+                    <img src={{processed_image}} class="imgr">
+                </span>
+            </div>
+        </div>
+        <div class="down">
+            <a href="{{processed_image}}" download>DOWNLOAD YOUR IMAGE</a>
+        </div>
+        <br>
+        {% endif %}
+        <div id="outbox">
+            <div id="inbox">
+                <h1 id="inh1">Made with love by</h1>
+                <a href="https://www.linkedin.com/in/debjit-pal-539214192/" id="ina1"><img
+                        src="https://webstockreview.net/images/linkedin-icon-png-7.png" alt="linkedin">Debjit
+                    Pal</a><br>
+            </div>
+        </div>
+    </body>
+
+</html>
