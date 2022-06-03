@@ -1,2 +1,3 @@
 # imageprocess
-A Django app made via Opencv for applying various filters to images
+A Django application where a user can upload any image, apply some filters and then download it.
+
