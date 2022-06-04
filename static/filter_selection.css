@@ -6,11 +6,11 @@ body {
     color: blanchedalmond;
 }
 #div1 {
-    background-image: url('https://www.highreshdwallpapers.com/wp-content/uploads/2013/12/wallpaper-4.jpg');
+    background-image: url('https://wallpapercave.com/wp/wp2651397.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment: fixed;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Ubuntu', cursive;
     padding: 7em;
     margin-top: -11px;
     margin-left: -10px;
@@ -18,14 +18,14 @@ body {
     text-align: center;
 }
 #h {
-    font-size: 8em;
+    font-size: 11em;
     margin: 0px;
     padding-bottom: 5px;
     padding-top: 30px;
-    color: aliceblue;
+    color: antiquewhite;
 }
 #p1 {
-    font-size: 2em;
+    font-size: 3em;
     margin-top: 0%;
     padding-bottom: 30px;
     color: aqua;
@@ -33,18 +33,22 @@ body {
 div.d {
     position: sticky;
     background-color: rgba(0, 0, 0, 0.575);
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 23px;
     margin-top: -120px;
     padding: 20px 20px 30px 20px;
     text-align: center;
+    border-radius: 50%;
+    color: goldenrod;
+
 }
 .div2 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', cursive;
     background-color: rgba(0, 0, 0, 0.418);
     margin: 30px 30px 30px 30px;
     padding: 50px;
     text-align: center;
+    font-size: 1.5em;
 }
 span {
     display: block;
@@ -60,19 +64,19 @@ span {
     width: 50%;
 }
 #choose {
-    font-size: 30px;
+    font-size: 40px;
 }
 input {
     cursor: pointer;
 }
 #filbut {
-    font-size: 20px;
-    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
     padding: 10px;
     margin-top: 10px;
 }
 #outbox {
-    background-image: url('https://free4kwallpapers.com/uploads/originals/2019/11/16/night-city-buildings-wallpaper.jpg');
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/986/252/980/tiger-beauty-awesome-blue-cool-gorgeous-lovely-nice-hd-wallpaper-preview.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     margin-bottom: -11px;
@@ -81,26 +85,27 @@ input {
     padding: 50px;
 }
 #inbox h1, a {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Ubuntu', cursive;
     display: block;
-    background-color: rgba(255, 255, 255, 0.562);
+    background-color: lightblue;
     text-align: center;
     color: rgba(0, 0, 0, 0.699);
     padding-bottom: 10px;
     padding-top: 30px;
+    opacity: 0.8;
 }
 #inh1 {
     padding-top: 60px;
     padding-bottom: 20px;
     margin: 0%;
-    font-size: 50px;
+    font-size: 70px;
 }
 a {
     text-decoration: none;
 }
 #ina1 {
     margin-bottom: 0px;
-    font-size: 30px;
+    font-size: 40px;
 }
 #ina1:hover {
     background-color: white;
