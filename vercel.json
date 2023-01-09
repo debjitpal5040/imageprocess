@@ -1,0 +1,14 @@
+{
+    "builds": [
+        {
+            "src": "imageprocess/wsgi.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "imageprocess/wsgi.py"
+        }
+    ]
+}
