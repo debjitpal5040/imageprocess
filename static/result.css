@@ -1,10 +1,12 @@
-*{
+* {
     box-sizing: border-box;
 }
+
 body {
     background-color: darkblue;
     color: blanchedalmond;
 }
+
 #div1 {
     background-image: url('https://wallpapercave.com/wp/wp2651397.jpg');
     background-repeat: no-repeat;
@@ -17,6 +19,7 @@ body {
     margin-right: -10px;
     text-align: center;
 }
+
 #h {
     font-size: 11em;
     margin: 0px;
@@ -24,12 +27,14 @@ body {
     padding-top: 30px;
     color: antiquewhite;
 }
+
 #p1 {
     font-size: 3em;
     margin-top: 0%;
     padding-bottom: 30px;
     color: aqua;
 }
+
 div.d {
     position: sticky;
     background-color: rgba(0, 0, 0, 0.575);
@@ -41,12 +46,14 @@ div.d {
     border-radius: 50%;
     color: goldenrod;
 }
+
 .container {
     background-color: rgba(0, 0, 0, 0.418);
     margin: 1.5em;
     margin-top: 3em;
     padding: 3em;
 }
+
 .imgr {
     height: 30%;
     width: 30%;
@@ -54,11 +61,13 @@ div.d {
     margin-left: auto;
     margin-right: auto;
 }
-.heading{
-    font-family: 'Ubuntu',cursive;
+
+.heading {
+    font-family: 'Ubuntu', cursive;
     color: gold;
     font-size: 3em;
 }
+
 .down {
     display: block;
     margin-left: auto;
@@ -66,15 +75,18 @@ div.d {
     width: 30%;
     text-align: center;
 }
+
 .down a {
     font-size: 200%;
     padding-top: 4%;
     font-family: 'Ubuntu', cursive;
     font-size: 2.5em;
 }
+
 .down a:hover {
     background-color: red;
 }
+
 #outbox {
     background-image: url('https://c4.wallpaperflare.com/wallpaper/986/252/980/tiger-beauty-awesome-blue-cool-gorgeous-lovely-nice-hd-wallpaper-preview.jpg');
     background-repeat: no-repeat;
@@ -84,7 +96,9 @@ div.d {
     margin-right: -10px;
     padding: 50px;
 }
-#inbox h1, a {
+
+#inbox h1,
+a {
     font-family: 'Ubuntu', cursive;
     display: block;
     background-color: lightblue;
@@ -94,22 +108,27 @@ div.d {
     padding-top: 30px;
     opacity: 0.8;
 }
+
 #inh1 {
     padding-top: 60px;
     padding-bottom: 20px;
     margin: 0%;
     font-size: 70px;
 }
+
 a {
     text-decoration: none;
 }
+
 #ina1 {
     margin-bottom: 0px;
     font-size: 40px;
 }
+
 #ina1:hover {
     background-color: white;
 }
+
 img {
     height: 30px;
     width: 40px;
